@@ -1,5 +1,4 @@
 export default {
-    hello: 'Ciao a tutti',
     triangle: {
         inhale: 'Вдох 5 секунд',
         exhale: 'Выдох 5 секунд',

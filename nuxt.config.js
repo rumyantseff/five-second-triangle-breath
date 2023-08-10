@@ -62,7 +62,13 @@ export default {
           code: 'de',
           iso: 'de-DE',
           file: 'de-DE.js'
-        },        
+        },  
+        {
+          name: 'Český',
+          code: 'cz',
+          iso: 'cz-CZ',
+          file: 'cz-CZ.js'
+        },      
       ],
       langDir: 'lang/',
       defaultLocale: 'ru',

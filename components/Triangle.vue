@@ -1,17 +1,17 @@
 <template>
-    <v-container class="pa-16" fluid>
+    <v-container fluid>
         <v-card class="rounded-xl elevation-0">
             <v-row class="my-auto justify-center">
                 <v-col cols="12" lg="12" sm="2" class="d-flex justify-center">
-                    <h5 class="inhale primary--text text-center">{{ $t('triangle.inhale') }}</h5>
-                    <h5 class="exhale primary--text text-center">{{ $t('triangle.exhale') }}</h5>
-                    <h5 class="breath-hold primary--text text-center">{{ $t('triangle.breathHold') }}</h5>
+                    <h4 class="inhale primary--text text-center">{{ $t('triangle.inhale') }}</h4>
+                    <h4 class="exhale primary--text text-center">{{ $t('triangle.exhale') }}</h4>
+                    <h4 class="breath-hold primary--text text-center">{{ $t('triangle.breathHold') }}</h4>
                     <v-img src="/images/triangle.png" class="triangle" />                   
                     <div :class="isActive ? 'circle-active' : 'circle'"></div>
                 </v-col>
             </v-row>
-            <v-row class="mt-16 justify-center" no-gutters>
-                <v-col lg="12" sm="2" class="d-flex justify-center">
+            <v-row class="transparent justify-center">
+                <v-col lg="12" sm="2" class="mt-16 d-flex justify-center">
                     <v-card-actions>
                         <v-btn class="reset-button pa-6" rounded depressed dark @click="isActive = !isActive">
                             <v-icon>{{ !isActive ? 'mdi-play' : 'mdi-stop' }}</v-icon>

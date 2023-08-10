@@ -1,11 +1,11 @@
 <template>
-    <v-app-bar class="elevation-0 mx-0 my-2 rounded-xl white align-center">
-        <img class="" src="/images/logo.png" width="32">
-        <v-toolbar-title class="toolbar mx-2"><h4>Breath Triangle</h4></v-toolbar-title>
+    <v-app-bar class="elevation-0 ma-1 rounded-xl white align-center">
+        <img src="/images/logo.png" width="40">
+        <v-toolbar-title class="toolbar mx-2"><h3>Breath Triangle</h3></v-toolbar-title>
         <v-spacer></v-spacer>
         <v-menu v-model="languageMenu" offset-y>
             <template #activator="{ on, attrs }">
-                <v-btn class="text-capitalize pentanary primary--text" small fab outlined text v-bind="attrs" v-on="on">
+                <v-btn class="text-capitalize primary--text" fab text v-bind="attrs" v-on="on">
                   <v-icon>mdi-translate</v-icon>
                 </v-btn>
             </template>
@@ -28,6 +28,7 @@ export default {
         { title: 'Slovenský', option: 'sk' },
         { title: 'English', option: 'en' },
         { title: 'Deutsch', option: 'de' },
+        { title: 'Čeština', option: 'cz' },
       ],
       activeLang: 'Русский',
       dialog: false,
