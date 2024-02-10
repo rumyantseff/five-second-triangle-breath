@@ -13,7 +13,7 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: 'images/logo.png' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: 'images/triangle-mini.svg' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -88,11 +88,14 @@ export default {
       light: false,
       themes: {
         light: {
-          primary: '#746c7c',
-          secondary: '#7289ab',
-          tertiary: '#74a7d1',
-          quanterary: '#a0c0de',
-          pentanary: '#c1dced',
+          primary: '#325184',
+          secondary: '#d9dcfb',
+          tertiary: '#4065b2',
+          quanterary: '#bcbde7',
+
+          primaryFont: '#2e384d',
+          secondaryFont: '#8798ad',
+          tertiaryFont: '#ffffff',
         }
       }
     }

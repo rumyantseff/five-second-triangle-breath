@@ -3,10 +3,10 @@
         <v-card class="rounded-xl elevation-0">
             <v-row class="my-auto justify-center">
                 <v-col cols="12" lg="12" sm="2" class="d-flex justify-center">
-                    <h4 class="inhale primary--text text-center">{{ $t('triangle.inhale') }}</h4>
-                    <h4 class="exhale primary--text text-center">{{ $t('triangle.exhale') }}</h4>
-                    <h4 class="breath-hold primary--text text-center">{{ $t('triangle.breathHold') }}</h4>
-                    <v-img src="/images/triangle.png" class="triangle" />                   
+                    <h4 class="inhale primaryFont--text text-center">{{ $t('triangle.inhale') }}</h4>
+                    <h4 class="exhale primaryFont--text text-center">{{ $t('triangle.exhale') }}</h4>
+                    <h4 class="breath-hold primaryFont--text text-center">{{ $t('triangle.breathHold') }}</h4>
+                    <v-img src="/images/triangle.svg" class="triangle" />                   
                     <div :class="isActive ? 'circle-active' : 'circle'"></div>
                 </v-col>
             </v-row>
@@ -38,31 +38,31 @@ export default {
 
 <style>
 .triangle {
-    filter: drop-shadow(15px 15px 15px #746c7c);
+    filter: drop-shadow(15px 15px 15px #325184);
     display: inline-block;
     position: relative;
 }
 .circle {
     display: block;
     border-radius: 50%;
-    background: radial-gradient(circle at 65% 15%, white 1px, #7289ab 3%, #c1dced 60%, #7289ab 100%);
-    opacity: 0.75;
-    filter: drop-shadow(5px 5px 15px #7289ab);
+    background: radial-gradient(circle at 65% 15%, white 1px, #4065b2 3%, #d9dcfb 60%, #bcbde7 100%);
+    opacity: 0.85;
+    filter: drop-shadow(5px 5px 15px #4065b2);
     position: absolute;
 }
 .circle-active {
     display: block;
     border-radius: 50%;
-    background: radial-gradient(circle at 65% 15%, white 1px, #7289ab 3%, #c1dced 60%, #7289ab 100%);
-    opacity: 0.75;
-    filter: drop-shadow(5px 5px 15px #7289ab);
+    background: radial-gradient(circle at 65% 15%, white 1px, #4065b2 3%, #d9dcfb 60%, #bcbde7 100%);
+    opacity: 0.85;
+    filter: drop-shadow(5px 5px 15px #4065b2);
     animation: spin 5s infinite linear, circle-moving 15s ease-in infinite;
     transition: all 5s ease;
     position: absolute;
 }
 .reset-button {
-    background-image: linear-gradient(135deg, #7289ab 0%, #a0c0de 100%);
-    box-shadow: 0 20px 30px -6px #a0c0de;
+    background-image: linear-gradient(135deg, #325184 0%, #4065b2 100%);
+    box-shadow: 0 10px 30px -6px #4065b2;
 }
 .inhale {
     position: absolute; 
@@ -124,7 +124,7 @@ export default {
             transform: translate(0, 0);
         }
         33.33% {
-            transform: translate(120px, -230px);
+            transform: translate(120px, -220px);
         }
         66.667% {
             transform: translate(240px, 0);
@@ -144,14 +144,14 @@ export default {
     .circle {
         width: 50px;
         height: 50px;
-        margin-top: 440px;
-        margin-right: 390px;
+        margin-top: 435px;
+        margin-right: 380px;
     }
     .circle-active {
         width: 50px;
         height: 50px;
-        margin-top: 440px;
-        margin-right: 390px;
+        margin-top: 435px;
+        margin-right: 380px;
     }
     .inhale {
         margin-top: 230px; 
@@ -172,10 +172,10 @@ export default {
             transform: translate(0, 0);
         }
         33.33% {
-            transform: translate(195px, -365px);
+            transform: translate(190px, -345px);
         }
         66.667% {
-            transform: translate(390px, 0);
+            transform: translate(375px, 0);
         }
         100% {
             transform: translate(0, 0);

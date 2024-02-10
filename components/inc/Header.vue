@@ -1,17 +1,17 @@
 <template>
     <v-app-bar class="elevation-0 ma-1 rounded-xl white align-center">
-        <img src="/images/logo.png" width="40">
+        <img src="/images/triangle-mini.svg" width="30">
         <v-toolbar-title class="toolbar mx-2"><h3>Breath Triangle</h3></v-toolbar-title>
         <v-spacer></v-spacer>
         <v-menu v-model="languageMenu" offset-y>
             <template #activator="{ on, attrs }">
-                <v-btn class="text-capitalize primary--text" fab text v-bind="attrs" v-on="on">
+                <v-btn class="text-capitalize primaryFont--text" fab text v-bind="attrs" v-on="on">
                   <v-icon>mdi-translate</v-icon>
                 </v-btn>
             </template>
             <v-list >
                 <v-list-item-group v-for="(lang, index) in langs" :key="index" @click="handleMenuItemClick(lang)">
-                    <v-list-item class="primary--text" :to="switchLocalePath(lang.option)">{{ lang.title }}</v-list-item>
+                    <v-list-item class="primaryFont--text" :to="switchLocalePath(lang.option)">{{ lang.title }}</v-list-item>
                 </v-list-item-group>
             </v-list>
         </v-menu>
@@ -46,7 +46,7 @@ export default {
 
 <style>
 .toolbar {
-    background: linear-gradient(135deg, #746c7c 0%, #7289ab 100%) !important;
+    background: linear-gradient(135deg, #325184 0%, #4065b2 100%) !important;
     background-clip: text !important;
     -webkit-background-clip: text !important;
     -moz-background-clip: text;
